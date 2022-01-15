@@ -182,3 +182,90 @@ margin-top: 18px;
 .half-filled{
     color:#FB8200;
 }
+
+/* email part start */
+.flexible-container{
+    display: flex;
+    margin: 130px 0;
+}
+
+.half-width{
+    line-height: 40px;
+}
+
+.half-width img{
+    width: 80%;
+}
+
+.pa{
+    padding: 17px 33px;
+}
+
+.link{
+    margin-top: 25px;
+}
+
+.link_button{
+    text-decoration: none;
+    outline:0;
+    border:0;
+    padding: 15px 20px;
+    background-color:  #E02C6D;
+    color: white;
+    font-size: 18px;
+    border-radius: 109px;
+    cursor: pointer;
+    position: relative;
+    top:0;
+}
+    
+.arrow{
+    padding-left: 10px;
+}
+    
+
+/* footer part start */
+
+footer{
+    background-color: #0A0826;
+   
+}
+
+footer h4{
+    font-size: 24px;
+   padding-top: 30px;
+   font-weight: 700;
+   color: #FFFFFF;
+   
+}
+
+footer p{
+    font-size: 14px;
+    color:#FFFFFF;
+    
+}
+
+
+.footer-icon{
+    color:#ffffffe8;
+
+   
+  
+}
+
+.back{
+font-size: 15px;
+ width: 27px;
+ height: 27px;
+ padding-top: 6px;
+ background-color: #7d76944f;
+ border-radius: 80%;
+ margin: 20px 0;
+   
+    
+}
+
+.footer-influencer{
+    text-align: center;
+    line-height: 35px;
+}
