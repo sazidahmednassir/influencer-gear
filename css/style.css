@@ -35,11 +35,59 @@ body{
     top:0;
 }
 
+.see-more-button{
+    outline:0;
+    border:0;
+    padding: 15px 20px;
+    background-color: #FFFFFF;
+    margin-left: 949px;
+   
+    color: #E02C6D;
+    font-size: 18px;
+   
+    cursor: pointer;
+    position: relative;
+    top:0;
+}
+
 .primary-button:active{
     top:5px;
     box-shadow: 0 2px 0 #a5085f;
 }
 
+/* navigation part start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+  
+}
+
+.navigation{
+    display: flex;
+}
+
+.navigation li{
+    list-style: none;
+    margin: 10px;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+    padding: 15px 10px;
+}
+
+
+.logo{
+    margin-top: 100px;
+}
+
+.li-margin{
+    margin-top: 100px;
+}
 
 .banner{
     height: calc(100vh - 80px);
@@ -73,14 +121,14 @@ body{
 
 .banner-right img{
     width: 100%;
-   height: 62%;
+  
     
   
     
 }
 
 .image-padding{
-    padding:30px;
+    padding:60px;
 }
 
 
@@ -110,7 +158,7 @@ body{
 }
 
 .logos img{
-    width: 60px;
+    width: 90px;
 }
 
 .logos{
@@ -140,9 +188,10 @@ body{
 .collection{
     width: 253px;
     
-    margin: 30px;
+    margin: 60px;
     padding-left: 14px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
 
 .collection .collection-banner img{
@@ -228,7 +277,14 @@ margin-top: 18px;
 
 footer{
     background-color: #0A0826;
+      width: auto;
+    
    
+}
+
+.footer-influence{
+    width: 150%;
+
 }
 
 footer h4{
@@ -253,6 +309,10 @@ footer p{
   
 }
 
+.fa-bars{
+    color: black;
+}
+
 .back{
 font-size: 15px;
  width: 27px;
@@ -269,3 +329,138 @@ font-size: 15px;
     text-align: center;
     line-height: 35px;
 }
+
+
+#nav-toggler{
+    display: none;
+}
+
+.nav-toggler-icon{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/* responsive part start */
+
+@media (max-width:600px){
+
+        .banner {
+        
+        
+            grid-template-columns: repeat(1, 1fr);
+            height: fit-content;
+           
+        }
+
+        .banner-left{
+            align-items: flex-start;
+            order: 2;
+            padding: 50px 0;
+        }
+
+        .banner-right img {
+            width: 100%;
+        }   
+            
+        .banner h1{
+            font-size: 20px;
+            width: 200px;
+            height: 74px;
+           margin-bottom: 0;
+        }
+       .banner p{
+           margin-top: 2px;
+       }
+        .see-more-button {
+            margin-left: 652px;
+        }
+
+        .collections{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+        .collection{
+            margin-left: 44px;
+        }
+        .see-more-button{
+        
+            margin-left: 120px;
+           }
+
+           .flexible-container{
+               display: grid;
+               grid-template-columns: repeat(1,1fr);
+               margin: auto;
+           }
+
+           
+           .nav-toggler-icon{
+            display: block;
+        }
+        .navigation{
+            
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            padding: 20px 0;
+            transform: translateY(-530px);
+            transition: .5s ease-in-out;
+        }
+        .navigation li a{
+            color: #121212;
+        }
+        #nav-toggler:checked ~ .navigation{
+            transform: translateY(-40px);
+        }
+       .logo{
+        margin-top: 12px;
+
+        }
+        .horizontal-line{
+            display: none;
+        }
+
+        .fa-bars {
+            color: black;
+            /* margin: -491px; */
+            height: 0;
+            
+            /* margin: 0; */
+        }
+    }
+
+
+    @media only screen and (min-width:688px) and (max-width:992px){
+        .container{
+            
+            width: 135%;
+            
+        }
+
+        .horizontal-line {
+           
+            padding: 0px;
+        }
+
+        .collections{
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+        }
+        .see-more-button {
+           
+            margin-left: 802px;
+            
+        }
+        footer {
+           
+            width: 1111px;
+        }
+
+       
+    }
