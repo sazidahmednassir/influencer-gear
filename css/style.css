@@ -102,7 +102,23 @@ body{
     
 }
 
+/* horizontal line start */
+.horizontal-line {
+    
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.171), 0 6px 20px 0 rgba(0, 0, 0, 0.041);
+}
 
+.logos img{
+    width: 60px;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    margin-left:10px;
+    gap: 75px;
+}
 
 /* collection part start */
 
