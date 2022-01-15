@@ -116,22 +116,23 @@ body{
 .collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
+    align-items: center;
+   
+
 }
 
 .collection{
     width: 253px;
-    margin: 30px;
     
-   
+    margin: 30px;
+    padding-left: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .collection .collection-banner img{
     width: 224px;
 height: 220px;
+margin-top: 18px;
 }
 
 .collection-details{
@@ -153,6 +154,7 @@ height: 220px;
 .collection-shipping{
     display: flex;
     flex-direction: column;
+    margin-bottom: 12px;
 }
 
 
